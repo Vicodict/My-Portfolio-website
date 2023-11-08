@@ -1,0 +1,72 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+#portfolio {
+  margin: 30px;
+}
+.allPortfolioContainer {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 600px)); */
+  gap: 20px;
+}
+.portfolio-container {
+  background-color: rgb(110, 117, 186);
+  padding: 5px;
+  width: 40vw;
+  border-radius: 20px;
+  border: 2px solid rgb(138, 138, 204);
+  transition: all 300ms linear;
+}
+
+.portfolio-container:hover {
+  background-color: transparent;
+}
+.portfolio-img {
+  width: 20vw;
+  /* height: 30vh; */
+}
+.project-image {
+  height: 28vh;
+  width: 28vw;
+}
+.github {
+  background-color: transparent;
+  color: gold;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid blue;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+.github:hover {
+  background-color: blue;
+}
+.demo {
+  background-color: blue;
+  color: gold;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid blue;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+.demo:hover {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+  .allPortfolioContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    justify-content: center;
+    align-items: center;
+  }
+
+  .github,
+  .demo {
+    padding: 6px;
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,108 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+#contact {
+  margin: 30px;
+}
+.contact-head {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  font-size: 2rem;
+  color: red;
+}
+.contact-head p {
+  background-color: blue;
+  border: 2px solid blue;
+  color: yellow;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 30px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.location-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10vw;
+}
+.location {
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.border-bottom {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.664);
+  width: 40vw;
+}
+.contact-icons {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.fa-facebook,
+.fa-linkedin,
+.fa-twitter,
+.fa-whatsapp {
+  background-color: blue;
+  color: white;
+}
+.form-list {
+  display: inline-block;
+  width: 30vw;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.submit {
+  width: 15vw;
+  background-color: blue;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  border: 2px solid red;
+}
+footer {
+  background-color: blue;
+  height: 10vh;
+}
+.endNotesFinal {
+  background-color: rgba(138, 138, 228, 0.849);
+  color: white;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 0.7rem;
+}
+.chevronUp {
+  background-color: rgba(31, 11, 112, 0.672);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: azure;
+}
+.chevronUp a {
+  color: white;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 890px) {
+  .location-form-container {
+    display: inline-block;
+  }
+}

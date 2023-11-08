@@ -1,0 +1,112 @@
+/* start of about section */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#About {
+  display: flex;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 0, 0.227);
+}
+.experienceContainer {
+  margin: 50px;
+  flex: 1;
+}
+.experience-years {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.year-space h1 {
+  font-size: 5rem;
+  text-indent: 2.5rem;
+  /* background-color: blue;
+  color: white; */
+  border-radius: 10px;
+  padding-left: 100px;
+}
+.year-space p {
+  font-size: 1.5rem;
+  letter-spacing: 1.5rem;
+  padding-left: 100px;
+}
+.experience-detail {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: blue;
+  width: 30vw;
+  margin-right: 100px;
+}
+.Description {
+}
+.myOffers {
+}
+
+.offerListings {
+  list-style-type: none;
+}
+.fa-check {
+  font-size: 0.5rem;
+  color: rgb(50, 50, 145);
+  border: 1px solid rgb(50, 50, 145);
+  border-radius: 50%;
+  padding: 2px;
+}
+.offerListItems {
+}
+.offerListItems {
+}
+.offerListItems .readMore {
+}
+.customerSatContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+.customer-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.customer-pics {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+.clients_text {
+  margin: 20px;
+}
+.happyText {
+  display: flex;
+  justify-content: first baseline;
+}
+.happyText p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.happyText span {
+  font-size: 1.5rem;
+  color: blue;
+  border: ridge;
+}
+.fa-arrow-up {
+  font-size: 2rem;
+  /* background-color: pink; */
+}
+@media screen and (max-width: 900px) {
+  #About {
+    display: block;
+  }
+  .customer-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 450px));
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+/* endf of about section */

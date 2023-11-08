@@ -1,0 +1,92 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body {
+  font-family: Poppins;
+}
+/* .progress {
+  background-color: purple;
+  width: 10%;
+  height: 10px;
+} */
+#skills-experience {
+  margin-top: 10px;
+  background-image: linear-gradient(
+    120deg,
+    rgba(0, 34, 255, 0.795),
+    rgba(241, 254, 45, 0.787)
+  );
+  padding: 10px;
+}
+.left_skill {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 800px));
+  justify-content: center;
+  align-items: center;
+}
+.allProgress {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 500px));
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+.red {
+  color: yellow;
+  text-align: center;
+}
+.rating {
+  /* margin: 30px; */
+  color: white;
+}
+.transparent-bg {
+  background-color: gray;
+  width: 40%;
+  border-radius: 50px;
+}
+.progress_bars,
+.right-skill {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.progress-text {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.yellow-progress {
+  background-color: yellow;
+  width: 80%;
+  height: 8px;
+  border-radius: 50px;
+}
+.blue-progress {
+  background-color: blue;
+  width: 88%;
+  height: 8px;
+  border-radius: 50px;
+}
+.purple-progress {
+  background-color: purple;
+  width: 95%;
+  height: 8px;
+  border-radius: 50px;
+}
+.pink-progress {
+  background-color: rgb(207, 116, 152);
+  width: 60%;
+  height: 8px;
+  border-radius: 50px;
+}
+.orange-progress {
+  background-color: orange;
+  width: 60%;
+  height: 8px;
+  border-radius: 50px;
+}

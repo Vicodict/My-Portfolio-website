@@ -1,0 +1,209 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header-container {
+  display: flex;
+  background-color: white;
+  /* border: 5px solid white; */
+  box-shadow: 0px 0px 5px black;
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 20px;
+}
+.logo-name {
+  color: rgb(0, 0, 255);
+  font-size: 2rem;
+
+  /* padding: 10px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+span.fa-bars {
+  display: none;
+  font-size: 2rem;
+  /* padding-right: 25px; */
+  cursor: pointer;
+}
+.nav-link {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 1rem;
+  color: black;
+  transition: all 300ms linear;
+  scroll-behavior: smooth;
+}
+
+.nav-link:hover {
+  background-color: transparent;
+  color: blue;
+  box-shadow: 0px 0px 5px blue;
+  border-radius: 5px;
+  transition: all 500ms linear;
+  transform: scaleZ(1.5);
+}
+.nav-link:active {
+  color: white;
+  background-color: blue;
+}
+/* start of main */
+.landing-page {
+  display: flex;
+  background: linear-gradient(
+      rgba(230, 49, 9, 0.943),
+      rgba(186, 126, 13, 0.926)
+    ),
+    url(../assets/gm.jpeg);
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-image: url(../assets/gm.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bac
+  /* background-attachment: fixed; */
+}
+.landing-page-sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.left-container {
+  /* width: 60vw; */
+}
+.myPics {
+  margin-bottom: -6px;
+  margin-top: 15%;
+}
+.Vicky-pics {
+  width: 35vw;
+  height: 70vh;
+}
+.splash-image {
+  width: 300px;
+  height: 250px;
+  margin-top: 10px;
+}
+
+.landingTextContainer {
+  padding: 0px 100px;
+  color: white;
+  /* margin: 30px; */
+}
+.nameIntro {
+  font-size: 2rem;
+  color: blue;
+  font-weight: 300;
+}
+.myName {
+  font-size: 3rem;
+}
+.role-animate {
+  color: white;
+  font-size: 2rem;
+}
+.role-animate::before {
+  content: "Front-end Developer";
+  animation: infinite 3s;
+  animation-name: role-animate;
+}
+@keyframes role-animate {
+  0% {
+    content: "Front-end Developer";
+  }
+  50% {
+    content: "Web Designer";
+  }
+}
+.cv {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 150px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 900px) {
+  .logo-name {
+    font-size: 1.5rem;
+  }
+  .navbar {
+    transform: translateX(-200%);
+  }
+  .shownavbar {
+    height: fit-content;
+    padding: 20px;
+    /* padding: 105; */
+    background-color: white;
+    width: 30%;
+    position: absolute;
+    top: 80px;
+    left: 0%;
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: translateX(0%);
+    flex-direction: column;
+  }
+
+  span.fa-bars {
+    display: block;
+    position: relative;
+    left: 55vw;
+  }
+
+  .landing-page {
+    display: block;
+  }
+  .splash-image {
+    width: 200px;
+  }
+  .landingTextContainer {
+    padding: 0px 50px;
+    margin: 30px;
+  }
+  .myName {
+    /* font-size: 2rem; */
+  }
+  .myPics {
+    /* margin-bottom: -40px; */
+  }
+  .Vicky-pics {
+    width: 50vw;
+    height: 70vh;
+    margin-bottom: -5px;
+  }
+  .role-animate {
+    font-size: 1.5rem;
+  }
+  .landing-page-sub {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 454px) {
+  span.fa-bars {
+    left: 35vw;
+  }
+}
+/* end of main */
